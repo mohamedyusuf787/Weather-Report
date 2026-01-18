@@ -49,12 +49,12 @@ function Weatherapp() {
             <div className="containerbox relative">
                 <img className="bg-image" src={image} alt="landingpage" />
 
-                <div className="main-content absolute  top-10 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-1 content-center lg:top-30">
+                <div className="main-content absolute  top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 content-center lg:top-30">
                     <div className="content  text-center">
                         <h2 className="font-bold text-white text-2xl">Weather App</h2>
                         <p className="font-normal text-white inline-block w-full">Get real-time weather updates for any location</p>
                     </div>
-                    <div className="card-box bg-white/20 backdrop-blur-sm absolute top-80 md: left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-3 items-center py-4 px-4 border-2 border-white rounded-2xl w-fit">
+                    <div className="card-box bg-white/20 backdrop-blur-sm absolute top-70 md: left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-3 items-center py-4 px-4 border-2 border-white rounded-2xl w-fit">
                         <div className="input-fields flex gap-2">
                             <input className="border-white border rounded-md px-2 text-white" type="text" placeholder="Enter city name" value={city} onChange={handleCity} />
                             <div onClick={handleWeather} className="icon border-white border rounded-md flex justify-center items-center bg w-8 h-8 p-1 cursor-pointer">
@@ -62,7 +62,7 @@ function Weatherapp() {
                             </div>
                         </div>
                         <div className="deg w-full flex flex-col items-center">
-                            <img src={img} className="w-40 h-40  md:w-80" alt="Sun-cloud-mid-rain" />
+                            <img src={img} className="w-40 h-40 " alt="Sun-cloud-mid-rain" />
                             <h1 className="text-6xl font-bold text-white">{Math.round(wdatas.temp)}°C</h1>
                             <p className="text-white">{city}</p>
                         </div>
