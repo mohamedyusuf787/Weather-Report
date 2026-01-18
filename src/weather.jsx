@@ -20,6 +20,7 @@ function Weatherapp() {
 
 
 
+
     function handleCity(evt) {
         setCity(evt.target.value)
     }
@@ -41,7 +42,7 @@ function Weatherapp() {
     }
 
     const weatherKey = wdatas.Weather?.toLowerCase();
-    const img = weatherImages[weatherKey] || "../public/assets/default.png"
+    const img = weatherImages[weatherKey] || "/assets/default.png"
 
 
     return (
