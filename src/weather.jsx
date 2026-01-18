@@ -1,8 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios";
 import './index.css';
-import clouds from "../public/assets/Sun-cloud-mid-rain.png";
-import image from "../public/assets/image.png"
+import image from "../public/assets/Image.png"
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 function Weatherapp() {
@@ -19,7 +18,7 @@ function Weatherapp() {
         mist: "../public/assets/mist.png",
     }
 
-    
+
 
     function handleCity(evt) {
         setCity(evt.target.value)
@@ -73,7 +72,7 @@ function Weatherapp() {
                                         </h2>
 
                                         <p className=" text-sm md:text-xl font-bold text-white text-center w-full mt-2">
-                                              {key === "temp" ? `${value}°C` : value}
+                                            {key === "temp" ? `${value}°C` : value}
 
                                         </p>
                                     </div>
